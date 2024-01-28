@@ -39,6 +39,6 @@
 
         // Función para redirigir a otra página
         function irPagina() {
-            window.location.href = 'Articulos/listaArticulos'; // Reemplaza 'otra_pagina.html' con la URL de la página a la que deseas ir
+            window.location.href ='listaArticulos'; // Reemplaza 'otra_pagina.html' con la URL de la página a la que deseas ir
         }
     </script>

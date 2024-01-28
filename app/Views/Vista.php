@@ -42,7 +42,9 @@
         <div id="resultado">
             
         </div>
+        <button onclick="irPagina()" type="button" class="btn btn-outline-success">Administración</button>
     </div>
+    
     
 
     <script>
@@ -69,11 +71,17 @@
                         cardsHtml += `<p><strong>${Object.keys(row)[rowIndex]}:</strong> ${row[Object.keys(row)[rowIndex]]}</p>`;
                     });
                     cardsHtml += `<a href="${data[cont]['id']}" class="stretched-link">Go somewhere</a>`
+                    cardsHtml += `
+                                <div class="container">
+                                <div class="d-flex justify-content-center">
+                                <img src="Image/${data[cont]['nombre_portada']}" class="img-fluid img-thumbnail" alt="..." width=20%>
+                                </div>
+                                </div>
+                                `
                     cardsHtml += '</div>';
                     cont += 1;
                 });
                 
-
                 // Mostrar las cards en el elemento con ID 'resultado'
                 $('#resultado').html(cardsHtml);
             },
@@ -81,4 +89,9 @@
                 console.error('Error al acceder al servicio REST:', error);
             }
         });
+
+        // Función para redirigir a otra página
+        function irPagina() {
+            window.location.href ='listaArticulos'; // Reemplaza 'otra_pagina.html' con la URL de la página a la que deseas ir
+        }
     </script>
