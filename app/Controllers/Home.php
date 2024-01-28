@@ -18,4 +18,8 @@ class Home extends BaseController
     public function tabla(){
         return view('Plantilla/header').view('VistaTabla').view('Plantilla/footer');
     }
+
+    public function juego(){
+        return view('Plantilla/header').view('Juego').view('Plantilla/footer');
+    }
 }
