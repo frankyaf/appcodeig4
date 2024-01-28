@@ -16,4 +16,5 @@ $routes->group('Articulos',['namespace' => 'App\Controllers\api'],function($rout
     $routes->get('listaArticulosPortada','listaArticulos::index');
     $routes->get('listaArticulosPortada/(:num)','listaArticulos::show/$1');
     $routes->post('nuevoArticulo','listaArticulos::create');
+    $routes->post('actualizarArticulo/(:num)','listaArticulos::update/$1');
 });

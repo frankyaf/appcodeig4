@@ -43,20 +43,7 @@ class ListaArticulos extends ResourceController
     
     public function create()
     {
-        /*try{
-            $articulo = $this->request->getJSON();
-            if($this->model->insert($articulo)):
-                $articulo->id = $this->model->insertID();
-                return $this->respondCreated($articulo);
-            else:
-                return $this->failValidationError($this->model->validation->listErrors());
-            endif;
-
-        }catch(\Exception $e){
-            return $this->failServerError('Ha ocurrido un error');
-        }*/
         
-            
         $model = new ArticulosModel();
         // Obtén los datos del cuerpo de la solicitud
         $data = $this->request->getJSON();
@@ -75,15 +62,25 @@ class ListaArticulos extends ResourceController
         
     }
 
-    
     public function update($id = null)
     {
-        
+         // Obtén los datos del cuerpo de la solicitud
+        $data = $this->request->getJSON();
+         // Validar y procesar los datos según tus necesidades
+ 
+        // Ejemplo de actualización en la base de datos
+        $model = new ArticulosModel();
+        $model->update($id,$data);
+
+        return $this->respondUpdated(['mensaje' => 'Registro actualizado exitosamente']);
     }
 
     
     public function delete($id = null)
     {
-        //
+        $model = new ArticulosModel();
+        $model ->delete($id);
+
+        return $this->respondDeleted(['mensaje' => 'Registro borrado exitosamente']);
     }
 }
