@@ -1,7 +1,7 @@
 Para la correcta visualización de la página web y por su sencillez:
  Se necesita la instalación de:
-	-XAMPP
-        -Composer (Añadir al PATH a PHP,aparece en la configuración
+	-XAMPP (Prender el modulo Apache y MySQL)
+    -Composer (Añadir al PATH a PHP,aparece en la configuración
 	 de la instalación.)
 Y para tomar algunos datos de entrada, se recomienda usar las
 migraciones, es decir con la siguiente línea de comandos:
@@ -19,10 +19,13 @@ se usaron a continuación:
 	-jQueryUI
 	-Bootstrap
 	-DataTables
-Como plus, se añade three.js
+Como plus, se añade three.js pero no se uso en este proyecto.
 
 Dentro del proyecto hay dos ligas importantes, una donde se muestra
 la pantalla principal:
 	- http://localhost/codeig4/public/
 Y la otra para el juego de drag and drop:
 	- http://localhost/codeig4/public/Juego
+
+Se añade una copia del archivo env, para solo cambiarlo a la exten-
+sión .env
