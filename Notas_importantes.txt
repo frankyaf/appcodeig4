@@ -1,0 +1,28 @@
+Para la correcta visualización de la página web y por su sencillez:
+ Se necesita la instalación de:
+	-XAMPP
+        -Composer (Añadir al PATH a PHP,aparece en la configuración
+	 de la instalación.)
+Y para tomar algunos datos de entrada, se recomienda usar las
+migraciones, es decir con la siguiente línea de comandos:
+	-php spark migrate
+Si no se ejecutan todas las migraciones, podemos forzar:
+	php spark migrate --all
+Si queremos revertir alguna migración con la siguiente línea:
+	php spark migrate:rollback
+También se recomienda, ejecutar el seeder que se incluyó: 
+	-php spark db:seed
+
+Si ocurre algun error con las librerias usadas, se listan las que
+se usaron a continuación:
+	-jQuery
+	-jQueryUI
+	-Bootstrap
+	-DataTables
+Como plus, se añade three.js
+
+Dentro del proyecto hay dos ligas importantes, una donde se muestra
+la pantalla principal:
+	- http://localhost/codeig4/public/
+Y la otra para el juego de drag and drop:
+	- http://localhost/codeig4/public/Juego

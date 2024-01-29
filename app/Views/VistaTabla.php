@@ -9,6 +9,7 @@
         <div class="row ">
             <div class="dflex justify-content-md-end">
                 <button type="button" class="btn btn-success " id="btnNuevoArticulo">Nuevo Articulo</button>
+                <button onclick="irPagina()" type="button" class="btn btn-outline-success">Pantalla Principal</button>
             </div>    
         </div>
 
@@ -187,6 +188,12 @@
 
     </div>
 <script>
+
+    // Función para redirigir a otra página
+    function irPagina() {
+            window.location.href ='../public'; // Reemplaza 'otra_pagina.html' con la URL de la página a la que deseas ir
+    }
+
     $(document).ready(function(){
         tableRI = $('#tableArticulos').DataTable({
         //scrollY: '200px',

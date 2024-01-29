@@ -5,6 +5,8 @@
   </h1>
   </div>
 
+  <button onclick="irPagina()" type="button" class="btn btn-outline-success">Pantalla Principal</button>
+
   <div id="cronometro">00:00:00</div>
 
   <div id="contador">Puntaje: 0</div>
@@ -78,6 +80,11 @@
 </div>
 
 <script>
+  // Función para redirigir a otra página
+  function irPagina() {
+            window.location.href ='../public'; // Reemplaza 'otra_pagina.html' con la URL de la página a la que deseas ir
+    }
+
   let contador = 0;
   let objetos = 0;
 
