@@ -1,31 +1,38 @@
-Para la correcta visualización de la página web y por su sencillez:
+Para la correcta visualización de la página web:
  Se necesita la instalación de:
 	-XAMPP (Prender el modulo Apache y MySQL)
     -Composer (Añadir al PATH a PHP,aparece en la configuración
 	 de la instalación.)
-Y para tomar algunos datos de entrada, se recomienda usar las
-migraciones, es decir con la siguiente línea de comandos:
-	-php spark migrate
-Si no se ejecutan todas las migraciones, podemos forzar:
-	php spark migrate --all
-Si queremos revertir alguna migración con la siguiente línea:
-	php spark migrate:rollback
-También se recomienda, ejecutar el seeder que se incluyó: 
-	-php spark db:seed
+La carpeta de este código se debe de poner en la siguiente ruta:
+	-C:\xampp\htdocs
 
-Si ocurre algun error con las librerias usadas, se listan las que
-se usaron a continuación:
-	-jQuery
-	-jQueryUI
-	-Bootstrap
-	-DataTables
-Como plus, se añade three.js pero no se uso en este proyecto.
 
-Dentro del proyecto hay dos ligas importantes, una donde se muestra
-la pantalla principal:
-	- http://localhost/codeig4/public/
-Y la otra para el juego de drag and drop:
-	- http://localhost/codeig4/public/Juego
 
-Se añade una copia del archivo env, para solo cambiarlo a la exten-
-sión .env
+Las siguientes líneas de comandos se hicieron en la carpeta:
+	-C:\xampp\htdocs\codeig4
+		Y para tomar algunos datos de entrada, se recomienda usar las
+		migraciones, es decir con la siguiente línea de comandos:
+			php spark migrate
+		Si no se ejecutan todas las migraciones, podemos forzar:
+			php spark migrate --all
+		Si queremos revertir alguna migración con la siguiente línea:
+			php spark migrate:rollback
+		También se recomienda, ejecutar el seeder que se incluyó: 
+			-php spark db:seed
+
+		Si ocurre algun error con las librerias usadas, se listan las que
+		se usaron a continuación:
+			-jQuery
+			-jQueryUI
+			-Bootstrap
+			-DataTables
+		Como plus, se añade three.js pero no se uso en este proyecto.
+
+		Dentro del proyecto hay dos ligas importantes, una donde se muestra
+		la pantalla principal:
+			- http://localhost/codeig4/public/
+		Y la otra para el juego de drag and drop:
+			- http://localhost/codeig4/public/Juego
+
+		Se añade una copia del archivo env, para solo cambiarlo a la exten-
+		sión .env
